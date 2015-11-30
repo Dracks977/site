@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang='fr'>
+
+<link rel="stylesheet" href="../assets/style.css">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>E-quitable</title>
+
+</head>
+
+<body>
+
+<div id="header">
+<h1>E-quitable</h1>
+<image id="opa" src="../assets/anime_pony.gif" width="100"></image>
+<ul>
+    <li><a href="../index.html">Accueil</a></li>
+    <li><a href="cat.html">Catégories</a></li>
+    <li><a href="panier.html">Mon panier</a></li>
+</ul>
+<div id="log">
+    <p id="log2">Bienvenue $USER, <a id="log3" href="panier.html">vous avez $nb dans votre panier</a></p>
+    <ul>
+    
+    <a id="po" href="inscription.html">inscription</a>
+	
+	 <a id="po" href="connexion.html">connexion</a>
+	
+    </ul>
+</div>
+</div>
+ <section id="top">
+            <aside>
+                <h1 id="toph">Vêtements</h1>
+            </aside>
+        </section>
+   <section id="section03">
+            <aside>
+                <h1 id="topop">Komodo Poncho Arama Puncho Navy</h1>
+                <center><image src="../assets/v1.png" width="100"></image></center>
+            </aside>
+            <article>                
+                <center><h4>Poncho en laine.</h4></center>
+            </article>
+        </section>
+          <section id="section03">
+            <aside>
+                <h1 id="topop">Sweat Tam Acid Black</h1>
+                <center><image src="../assets/v2.png" width="130"></image></center>
+            </aside>
+            <article>                
+                <center><h4>Sweat col haut.</h4></center>
+            </article>
+        </section>
+        <section id="section03">
+            <aside>
+                <h1 id="topop">1083 Jean 201 Droit DenimOriginal Noir</h1>
+                <center><image src="../assets/v3.png" width="150"></image></center>
+            </aside>
+            <article>                
+                <center><h4>jeans droit de couleur noir pour femme. Denim 100% coton bio.</h4></center>
+            </article>
+        </section>
+           <section id="section03">
+            <aside>
+                <h1 id="topop">Komodo Manteau Pea Coat Grey</h1></h1>
+                <center><image src="../assets/manteaux.png" width="130"></image></center>
+            </aside>
+            <article>                
+                <center><h4>Origine : Népal (issu du commerce équitable)
+                Composition : 65% polyester recyclé et 35% laine</h4></center>
+            </article>
+        </section>
+           <section id="section03">
+            <aside>
+                <h1 id="topop">LeTricolore Pull Carbasse Rond Gris</h1>
+                <center><image src="../assets/v5.png" width="130"></image></center>
+            </aside>
+            <article>                
+                <center><h4>Pull Homme Carbasse col Rond
+                Sobre et bien taillé, ce pull est marqué d’une discrète broderie Tricolore sur la poitrine.</h4></center>
+            </article>
+        </section>
+           <section id="section03">
+            <aside>
+                <h1 id="topop">Komodo Robe Kesac Dress Wine</h1>
+                <center><image src="../assets/v6.png" width="130"></image></center>
+            </aside>
+            <article>                
+                <center><h4>Robe en Bamboo</h4></center>
+            </article>
+        </section>
+<div id="footer">
+Copyright © e-quitable<br>
+<a id="cont" href="mailto:vanhem_n@etna-alternance.net">Contact<a/>
+</div>
+
+</body>
+
+</html>
+
