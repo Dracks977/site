@@ -39,6 +39,7 @@ CREATE TABLE Categories
     ID INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
     Libelle VARCHAR(255),
     Description VARCHAR(510),
+	image varchar(510),
     Date_creation DATE,
     Date_modification DATE
 );
@@ -73,9 +74,16 @@ INSERT INTO Produits (Libelle,Description, image,Prix,Nombres_produit,Date_creat
 
 
 
-INSERT INTO Categories (Libelle,Description,Date_creation,Date_modification) VALUES ('Venu de Chine', 'Produit chinoi', '2001-01-01', '2001-01-01');
-INSERT INTO Categories (Libelle,Description,Date_creation,Date_modification) VALUES ('Venu du Japon', 'Produit Japonais', '2002-01-01', '2002-01-01');
-INSERT INTO Categories (Libelle,Description,Date_creation,Date_modification) VALUES ('Venu de France', 'Produit Totalement Francais', '2008-01-01', '2008-01-01');
+INSERT INTO Categories (Libelle,Description, image,Date_creation,Date_modification) VALUES ('Alimentation', 'Des produits bio et issus du commerce équitable, venant du monde entier!', "../assets/pates.png",NOW(), NOW());
+INSERT INTO Categories (Libelle,Description, image,Date_creation,Date_modification) VALUES ('Thés et Cafés', "Des thés et cafés de qualité superieur, cultivés dans la tradition de leur pays d'origine", "../assets/cacao.png",NOW(), NOW());
+INSERT INTO Categories (Libelle,Description, image,Date_creation,Date_modification) VALUES ('Produits de beauté', "Parce que la beauté n'implique pas forcément des molécules de synthèse et l'assassinat brutal d'animaux. 
+             (oui ce site est aussi engagé) Découvrez donc cette gamme de produits naturels et bio venant du monde entier!", "../assets/creme.png",NOW(), NOW());
+INSERT INTO Categories (Libelle,Description, image,Date_creation,Date_modification) VALUES ('Vêtements', 'Vêtements des quatre coins du monde, traditionels ou en coton bio. ', "../assets/lanterne.png",NOW(), NOW());
+INSERT INTO Categories (Libelle,Description, image,Date_creation,Date_modification) VALUES ('Maison', 'Objets artisanaux pour le confort et la déco.', "../assets/encens.png",NOW(), NOW());
+INSERT INTO Categories (Libelle,Description, image,Date_creation,Date_modification) VALUES ('Bijoux', 'Bijoux faits main, pour sublimer votre beauté.', "../assets/bijoux.png",NOW(), NOW());
+
+
+#a faire
 
 INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('1', '1');
 INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('1', '1');
