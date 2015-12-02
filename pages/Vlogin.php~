@@ -1,0 +1,48 @@
+<?php
+session_start();
+$errmsg_arr = array();
+$errflag = false;
+// configuration
+$dbhost 	= "localhost";
+$dbname		= "site_vanhem_n";
+$dbuser		= "root";
+$dbpass		= "";
+ 
+// database connection
+$conn = new PDO("mysql:host=$dbhost;dbname=$dbname",$dbuser,$dbpass);
+ 
+// new data
+ 
+$user = $_POST['mail'];
+$password = $_POST['pass'];
+ 
+if($user == '') {
+	$errmsg_arr[] = 'You must enter your Username';
+	$errflag = true;
+}
+else if($password == '') {
+	$errmsg_arr[] = 'You must enter your Password';
+	$errflag = true;
+}
+// query
+	$result = $conn->prepare("SELECT * FROM User WHERE mail= :hjhjhjh AND pass= :asas");
+	$result->bindParam(':hjhjhjh', $user);
+	$result->bindParam(':asas', $password);
+	$result->execute();
+	$rows = $result->fetch(PDO::FETCH_NUM);
+	if($rows > 0) {
+	var_dump($_SESSION);
+	//header("location: ../index.php");
+	}
+	else{
+		$errmsg_arr[] = 'Username and Password are not found';
+		$errflag = true;
+	}
+	if($errflag) {
+		$_SESSION['ERRMSG_ARR'] = $errmsg_arr;
+		session_write_close();
+		header("location: connexion.php");
+		exit();
+	}
+ 
+?>
