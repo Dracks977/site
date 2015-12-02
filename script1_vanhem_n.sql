@@ -72,8 +72,10 @@ INSERT INTO Produits (Libelle,Description, image,Prix,Nombres_produit,Date_creat
 INSERT INTO Produits (Libelle,Description, image,Prix,Nombres_produit,Date_creation,Date_modification) VALUES ("Lanterne Fnar", "Cette magnifique lanterne typiquement marocaine éclairera votre interieur avec la douceur d'un soleil couchant", "../assets/lanterne.png", '43', '30', '2005-11-05', '2008-09-12');
 INSERT INTO Produits (Libelle,Description, image,Prix,Nombres_produit,Date_creation,Date_modification) VALUES ("Bracelet Ethnique Manchette", "Ce bracelet faits main au Kenya parera avec classe votre beauté.", "../assets/bracelet.png", '27', '30', '2005-11-05', '2008-09-12');
 
-
-
+#cat for index
+INSERT INTO Categories (Libelle,Date_creation,Date_modification) VALUES ('Nouveauté :',NOW(), NOW());
+INSERT INTO Categories (Libelle,Date_creation,Date_modification) VALUES ('Top des ventes :',NOW(), NOW());
+#categorie for cat.php
 INSERT INTO Categories (Libelle,Description, image,Date_creation,Date_modification) VALUES ('Alimentation', 'Des produits bio et issus du commerce équitable, venant du monde entier!', "../assets/pates.png",NOW(), NOW());
 INSERT INTO Categories (Libelle,Description, image,Date_creation,Date_modification) VALUES ('Thés et Cafés', "Des thés et cafés de qualité superieur, cultivés dans la tradition de leur pays d'origine", "../assets/cacao.png",NOW(), NOW());
 INSERT INTO Categories (Libelle,Description, image,Date_creation,Date_modification) VALUES ('Produits de beauté', "Parce que la beauté n'implique pas forcément des molécules de synthèse et l'assassinat brutal d'animaux. 
