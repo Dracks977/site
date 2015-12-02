@@ -60,7 +60,7 @@ include("pages/i_headerD.php");
                 <h1 id= "toph">Nouveauté :</h1>
             </aside>
         </section>
-         <a href="pages/dproduit4.html"><section id="section01">
+         <a href="pages/dproduit.php?p=4"><section id="section01">
             <aside>
                 <h1 id="tpop">ETHIQUABLE - Thé Vert Hibiscus Gingembre</h1>
                 <center><image src="assets/the.png" width="170"></image></center>
@@ -69,7 +69,7 @@ include("pages/i_headerD.php");
                 <center><h4>Ce thé puissant vous fera voyager au coeur du Vietnam.</h4></center>
             </article>
         </section></a>
-         <a href="pages/dproduit5.html"><section id="section01">
+         <a href="pages/dproduit.php?p=5"><section id="section01">
             <aside>
                 <h1 id="tpop">Lanterne Fnar</h1>
                 <center><image src="assets/lanterne.png" width="100"></image></center>
@@ -78,7 +78,7 @@ include("pages/i_headerD.php");
                 <center><h4>Cette magnifique lanterne typiquement marocaine éclairera votre interieur avec la douceur d'un soleil couchant</h4></center>
             </article>
         </section></a>
-         <a href="pages/dproduit6.html"><section id="section01">
+         <a href="pages/dproduit.php?p=6"><section id="section01">
             <aside>
                 <h1 id="tpop">Bracelet Ethnique Manchette</h1>
                 <center><image src="assets/bracelet.png" width="190"></image></center>

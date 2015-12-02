@@ -67,6 +67,11 @@ INSERT INTO Produits (Libelle,Description,image, Prix,Nombres_produit,Date_creat
               cultivée dans le sud de la Françe.", '../assets/pates.png', '5', '200', '2001-11-05', '2002-08-12');
 INSERT INTO Produits (Libelle,Description, image,Prix,Nombres_produit,Date_creation,Date_modification) VALUES ("Huile en Crème Corps L'Argan Bio - 175ml", "Enrichie en Huile de Tournesol nourrissante et en Cire d’Abeille protectrice, l’Huile en Crème restructure le film hydrolipidique des peaux sèches et déshydratées. La peau est nourrie, régénérée, protégée grâce à l’exceptionnelle concentration en acides gras (près de 25 % de la formule), elle retrouve un toucher velouté.", "../assets/b2.png",'15', '30', '2005-11-05', '2008-09-12');
 INSERT INTO Produits (Libelle,Description, image,Prix,Nombres_produit,Date_creation,Date_modification) VALUES ('Komodo Manteau Pea Coat Grey', 'Origine : Népal (issu du commerce équitable) Composition : 65% polyester recyclé et 35% laine', "../assets/manteaux.png", '75', '30', '2005-11-05', '2008-09-12');
+INSERT INTO Produits (Libelle,Description, image,Prix,Nombres_produit,Date_creation,Date_modification) VALUES ("Café en Grains Pure Origine d'Ethiopie", 'Ce grand arabica nous vient d’Ethiopie, terre natale du café. Cultivé entre 1770 et 2200 mètres d’altitude de manière traditionnelle, ce café équilibré se caractérise par de puissants arômes et une pointe cacaotée.', "../assets/caf.png", '8.66', '30', '2005-11-05', '2008-09-12');
+INSERT INTO Produits (Libelle,Description, image,Prix,Nombres_produit,Date_creation,Date_modification) VALUES ("Lanterne Fnar", "Cette magnifique lanterne typiquement marocaine éclairera votre interieur avec la douceur d'un soleil couchant", "../assets/lanterne.png", '43', '30', '2005-11-05', '2008-09-12');
+INSERT INTO Produits (Libelle,Description, image,Prix,Nombres_produit,Date_creation,Date_modification) VALUES ("Bracelet Ethnique Manchette", "Ce bracelet faits main au Kenya parera avec classe votre beauté.", "../assets/bracelet.png", '27', '30', '2005-11-05', '2008-09-12');
+
+
 
 INSERT INTO Categories (Libelle,Description,Date_creation,Date_modification) VALUES ('Venu de Chine', 'Produit chinoi', '2001-01-01', '2001-01-01');
 INSERT INTO Categories (Libelle,Description,Date_creation,Date_modification) VALUES ('Venu du Japon', 'Produit Japonais', '2002-01-01', '2002-01-01');
