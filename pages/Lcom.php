@@ -1,6 +1,6 @@
 <?php
-include('config.php');
 session_start();
+include('config.php');
 $errmsg_arr = array();
 $errflag = false;
 // configuration
@@ -16,7 +16,8 @@ catch(PDOException $e)
     echo "Connection failed (check config.php):    " . $e->getMessage();
     exit();
     }
-
+    
+$id = $_GET['id']
 $Nom = $_SESSION['User_Nom'];  
 $Prenom = $_SESSION['User_Prenom'];
 $Description = $_POST['texte']; 
