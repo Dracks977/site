@@ -44,8 +44,7 @@ else if($password == '') {
 	header("location: ../index.php");
 	}
 	else{
-		$errmsg_arr[] = "mauvaise combinaison, <a href='oublie.php'
-		>Mot de pass oublié</a>";
+		$errmsg_arr[] = "mauvaise combinaison, <a style='font-size: 90%' href='oublie.php'>Mot de pass oublié</a>";
 		$errflag = true;
 	}
 	if($errflag) {
