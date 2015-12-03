@@ -1,5 +1,10 @@
 <?php
 session_start();
+$id = $_GET["id"]
+$Nom = $_SESSION["User_Nom"];  
+$Prenom = $_SESSION["User_Prenom"];
+$Description = $_POST["texte"]; 
+
 // include('config.php');
 // $errmsg_arr = array();
 // $errflag = false;
@@ -16,11 +21,11 @@ session_start();
 //     echo "Connection failed (check config.php):    " . $e->getMessage();
 //     exit();
 //     }
-var_dump($_SESSION);
-// $id = $_GET['id']
-// $Nom = $_SESSION['User_Nom'];  
-// $Prenom = $_SESSION['User_Prenom'];
-// $Description = $_POST['texte']; 
+var_dump($Nom);
+var_dump($Prenom);
+var_dump($id);
+var_dump($Description);
+
 
 // if ($Description == '') {
 // 	$errmsg_arr[] = 'Vous avez oublié votre commentaire';
