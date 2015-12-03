@@ -94,6 +94,7 @@ INSERT INTO Categories (Libelle,Description, image,Date_creation,Date_modificati
 INSERT INTO Categories (Libelle,Description, image,Date_creation,Date_modification) VALUES ('Bijoux', 'Bijoux faits main, pour sublimer votre beauté.', "../assets/bijoux.png",NOW(), NOW());
 
 INSERT INTO Commentaire_Produit (ID_produit,Nom,Prenom,Description) VALUES ('1', 'Nom', 'Prenom', 'ceci ets un commentaire');
+INSERT INTO Commentaire_Produit (ID_produit,Nom,Prenom,Description) VALUES ('1', 'Nom', 'Prenom', "c'est le deuxiemme la");
 
 #a faire
 
