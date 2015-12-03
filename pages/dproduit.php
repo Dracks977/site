@@ -28,7 +28,7 @@ if (isset($_SESSION['c'])){
 include("Com.php");
 echo "<section id='con'>
       <aside>
-        <form id='font1' action='Lcom.php' method='POST'> 
+        <form id='font1' action='Lcom.php?id={$id}' method='POST'> 
            <h4>Laissez Nous un commentaire :<input size='25px' id='comment' type='textarea' name='texte'>
            <a><input type='submit' value='Submit'></a></h4>
       </aside>
