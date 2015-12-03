@@ -10,10 +10,9 @@ while ($donnees = $reponse->fetch()){
 echo "<a href='pages/dproduit.php?p=" . $donnees['ID'] . "'><section id='section01'>
             <aside>
                 <h1 id='tpop'>" . $donnees['Libelle'] . "</h1>
-                <center><image src='" . $donnees['image'] . "' width='35%'></image></center>
+                <center><image src='" . $donnees['image'] . "' width='33%'></image></center>
             </aside>
             <article>                
-                <center><h4>Produit phare de notre rayon alimentation!</h4></center>
             </article>
         </section></a>";
 
