@@ -35,11 +35,11 @@ else{
 	$result->execute();
 		if($errflag) {
 		$_SESSION['ERRMSG_ARR'] = $errmsg_arr;
-		header("location: dproduit.php?id=" . $id);
+		header("location: dproduit.php?p=" . $id);
 		exit();
 	}
 		else{
-		header("location: dproduit.php?id=" . $id);
+		header("location: dproduit.php?p=" . $id);
 	}
 }
 ?>
