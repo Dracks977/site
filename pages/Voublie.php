@@ -60,7 +60,7 @@ else if($Prenom == '') {
 	header("location: connexion.php");
 	}
 	else{
-		$oerrmsg_arr[] = 'Vous avez deja un compte';
+		$oerrmsg_arr[] = 'Votre compte est introuvable';
 		$oerrflag = true;
 		$_SESSION['oerrmsg_arr'] = $oerrmsg_arr;
 		header("location: oublie.php");
