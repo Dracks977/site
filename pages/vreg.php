@@ -59,7 +59,7 @@ else if($adr == '') {
 	$result->bindParam(':Nom', $Nom);
 	$result->bindParam(':Prenom', $Prenom);
 	$result->bindParam(':adr', $adr);
-	$result->bindParam(':Question', $Question;
+	$result->bindParam(':Question', $Question);
 	$result->bindParam(':password', $passh);
 	$result->execute();
 	if($errflag) {
