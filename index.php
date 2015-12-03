@@ -27,34 +27,7 @@ include("pages/i_headerD.php");
                 <h1 id= "toph">Top des ventes :</h1>
             </aside>
         </section>
-   <a href="pages/dproduit.php?p=1"><section id="section01">
-            <aside>
-                <h1 id="tpop">Torsades au petit épeautre Bio 250g- Lazzaretti</h1>
-                <center><image src="assets/pates.png" width="170"></image></center>
-            </aside>
-            <article>                
-                <center><h4>Produit phare de notre rayon alimentation!</h4></center>
-            </article>
-        </section></a>
-          <a href="pages/dproduit.php?p=2"><section id="section01">
-            <aside>
-                <h1 id="tpop">Huile en Crème Corps L'Argan Bio - 175ml</h1>
-                <center><image src="assets/b2.png" width="170"></image></center>
-            </aside>
-            <article>                
-                <center><h4>Approuvé par nos consommateurs, découvrez le plus grand succès de notre rayon produits de beauté!</h4></center>
-            </article>
-        </section></a>
-         <a href="pages/dproduit.php?p=3"><section id="section01">
-            <aside>
-                <h1 id="tpop">Komodo Manteau Pea Coat Grey</h1>
-                <center><image src="assets/manteaux.png" width="120"></image></center>
-            </aside>
-            <article>                
-                <center><h4>Origine : Népal (issu du commerce équitable)
-                            Composition : 65% polyester recyclé et 35% laine</h4></center>
-            </article>
-        </section></a>
+                 <?php include("idcatop.php") ?>
         <section id="top">
             <aside>
                 <h1 id= "toph">Nouveauté :</h1>
