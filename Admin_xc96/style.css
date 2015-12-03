@@ -1,0 +1,66 @@
+body {
+    background-image: url("dsc_1852-fc808e.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px auto;
+}
+
+#header {
+	background-image: url("1.jpg");
+	background-size: cover;
+    padding:1px;
+	height: 70px;
+    font-weight: bold;
+}
+
+#wrap {
+	background-color : red;
+	width: 1800px;
+	height: 800px;
+	margin-top: 10px;
+}
+
+#moite {
+	background-color : green;
+    padding:5px;
+	width: 870px;
+	float: left;
+	margin: 10px;
+	height: 770px;
+}
+
+.bouton {
+    width:auto;
+    padding:8px 0;
+    text-align:center;
+    display: inline-block;
+    float:left;
+	margin: 15px;
+    border-radius:7px;
+    font-size: 0.85em;
+    width:120px;
+    color:#000;
+    font-family: Arial,sans-serif;
+}
+
+.bouton.large{font-size: 1.1em; width:220px;}
+
+
+.bouton.blanc, .bouton.blanc:active {
+	background: #F8F8F8;
+	background: -webkit-linear-gradient( #F8F8F8, #D7D7D7); 
+	background: -moz-linear-gradient( #F8F8F8, #D7D7D7); 
+	background: -ms-linear-gradient( #F8F8F8, #D7D7D7); 
+	background: -o-linear-gradient( #F8F8F8, #D7D7D7); 
+	background: linear-gradient( #F8F8F8, #D7D7D7);
+	text-shadow: 0px 2px 0px rgba( 255, 255, 255, 0.8);
+	}
+.bouton.blanc:hover{ 
+	background: #F5F5F5;
+	background: -webkit-linear-gradient( #FFF, #CCC);
+	background: -moz-linear-gradient( #FFF, #CCC);
+	background: -ms-linear-gradient( #FFF, #CCC);
+	background: -o-linear-gradient( #FFF, #CCC);
+	background: linear-gradient( #FFF, #CCC);
+	}
+.bouton.blanc:active {box-shadow: 1px 1px 10px #CCC inset, 0 1px 0 rgba( 255, 255, 255, 0.4);}
