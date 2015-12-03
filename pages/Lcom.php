@@ -27,11 +27,10 @@ if ($Description == '') {
 }
 else{
 
-	$result = $conn->prepare("INSERT INTO Commentaire_Produit (ID_produit,Nom,Prenom,Description) VALUES (:id, :Nom, :Prenom, :Description);");
+	$result = $conn->prepare("INSERT INTO Commentaire_Produit (ID_produit,Nom,Prenom,Description) VALUES ({$id}, :Nom, :Prenom, :Description);");
 	$result->bindParam(':Description', $Description);
 	$result->bindParam(':Nom', $Nom);
 	$result->bindParam(':Prenom', $Prenom);
-	$result->bindParam(':id', $id);
 	$result->execute();
 		if($errflag) {
 		$_SESSION['ERRMSG_ARR'] = $errmsg_arr;
