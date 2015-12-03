@@ -394,6 +394,12 @@ input[type=submit], input[type=reset] {
     margin: 1%;
 }
 
+#loicom {
+    font-size: 15px;
+    margin-left: 3%;
+    margin-right: 1%;
+}
+
 
 aside {
     margin:5px;
