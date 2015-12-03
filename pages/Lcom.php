@@ -16,7 +16,7 @@ catch(PDOException $e)
     echo "Connection failed (check config.php):    " . $e->getMessage();
     exit();
     }
-    
+var_dump($_SESSION);
 $id = $_GET['id']
 $Nom = $_SESSION['User_Nom'];  
 $Prenom = $_SESSION['User_Prenom'];
@@ -30,7 +30,7 @@ else{
 
 	$result = $conn->prepare("INSERT INTO Commentaire_Produit (ID_produit,Nom,Prenom,Description) VALUES ({$id}, :Nom, :Prenom, :Description);");
 	$result->bindParam(':Description', $Description);
-	$result->bindParam(':Nom', $Nom);
+	$result->bindParam(':Nom', $_SESSION['User_Nom']);
 	$result->bindParam(':Prenom', $Prenom);
 	$result->execute();
 		if($errflag) {
