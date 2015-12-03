@@ -1,9 +1,9 @@
 <?php
 session_start();
-$id = $_GET["id"]
-$Nom = $_SESSION["User_Nom"];  
-$Prenom = $_SESSION["User_Prenom"];
-$Description = $_POST["texte"]; 
+$Lid = $_GET["id"]
+$LNom = $_SESSION["User_Nom"];  
+$LPrenom = $_SESSION["User_Prenom"];
+$LDescription = $_POST["texte"]; 
 
 // include('config.php');
 // $errmsg_arr = array();
