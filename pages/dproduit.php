@@ -23,9 +23,7 @@ include("headerD.php");
 }
 $id = $_GET['p'];
 include('idprod.php');
-  ?>
 
-<?php
 if (isset($_SESSION['c'])){
 include("Com.php");
 echo "<section id='con'>
