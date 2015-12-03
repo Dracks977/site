@@ -3,7 +3,7 @@ session_start();
 $Lid = $_GET["id"];
 $LNom = $_SESSION["User_Nom"];  
 $LPrenom = $_SESSION["User_Prenom"];
-$LDescription = $_GET["lcom"]; 
+$LDescription = $_POST["lcom"]; 
 
 // include('config.php');
 // $errmsg_arr = array();
