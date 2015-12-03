@@ -6,41 +6,41 @@ $LPrenom = $_SESSION["User_Prenom"];
 $LDescription = $_POST["lcom"]; 
 
 include('config.php');
-$errmsg_arr = array();
-$errflag = false;
+$Lerrmsg_arr = array();
+$Lerrflag = false;
 // configuration
  try {
-    $conn = new PDO("mysql:host=$dbhost;dbname=$dbname",$dbuser,$dbpass);
+    $Lconn = new PDO("mysql:host=$dbhost;dbname=$dbname",$dbuser,$dbpass);
     // set the PDO error mode to exception
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $Lconn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     echo "Connected successfully"; 
     }
-catch(PDOException $e)
+catch(PDOException $Le)
     {
-    echo "Connection failed (check config.php):    " . $e->getMessage();
+    echo "Connection failed (check config.php):    " . $Le->getMessage();
     exit();
     }
 
 if ($LDescription == '') {
-	$errmsg_arr[] = 'Vous avez oublié votre commentaire';
-	$errflag = true;
+	$Lerrmsg_arr[] = 'Vous avez oublié votre commentaire';
+	$Lerrflag = true;
 	header("location: dproduit.php?p=" . $id);
 }
 else{
 
-	$result = $conn->prepare("INSERT INTO Commentaire_Produit (ID_produit,Nom,Prenom,Description) VALUES (:id, :Nom, :Prenom, :Description);");
-	$result->bindParam(':Description', $LDescription);
-	$result->bindParam(':Nom', $LNom);
-	$result->bindParam(':Prenom', $LPrenom);
-	$result->bindParam(':id', $Lid);
-	$result->execute();
-		if($errflag) {
+	$Lresult = $Lconn->prepare("INSERT INTO Commentaire_Produit (ID_produit,Nom,Prenom,Description) VALUES (:id, :Nom, :Prenom, :Description);");
+	$Lresult->bindParam(':Description', $LDescription);
+	$Lresult->bindParam(':Nom', $LNom);
+	$Lresult->bindParam(':Prenom', $LPrenom);
+	$Lresult->bindParam(':id', $Lid);
+	$Lresult->execute();
+		if($Lerrflag) {
 		$_SESSION['ERRMSG_ARR'] = $errmsg_arr;
-		header("location: dproduit.php?p=" . $id);
+		header("location: dproduit.php?p=" . $Lid);
 		exit();
 	}
 		else{
-		header("location: dproduit.php?p=" . $id);
+		header("location: dproduit.php?p=" . $Lid);
 	}
 }
 ?>
