@@ -50,8 +50,8 @@ include("pages/i_headerD.php");
         </section>
         <section id="section02">
             <aside>
-                <h1 id="squi">Nous contacter:</h1>
-                <p><a href="mailto:Sally.stitch17@gmail.com">Sally.stitch17@gmail.com</a><br /><a href="mailto:vanhem_n@etna-alternance.net">vanhem_n@etna-alternance.net</p><a/>
+                <h1 id="squi">Me contacter:</h1>
+                <p><a href="mailto:vanhem_n@etna-alternance.net">vanhem_n@etna-alternance.net</p><a/>
             </aside>
         </section>
 <div id="footer">
