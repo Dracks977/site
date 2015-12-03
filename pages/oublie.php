@@ -32,13 +32,13 @@ include("headerD.php");
       </aside>
       <article>  
 <?php
-if( isset($_SESSION['ERRMSG_ARR']) && is_array($_SESSION['ERRMSG_ARR']) && count($_SESSION['ERRMSG_ARR']) >0 ) {
+if( isset($_SESSION['oerrmsg_arr']) && is_array($_SESSION['oerrmsg_arr']) && count($_SESSION['oerrmsg_arr']) >0 ) {
   echo '<ul style="padding:0; color:red;">';
-  foreach($_SESSION['ERRMSG_ARR'] as $msg) {
+  foreach($_SESSION['oerrmsg_arr'] as $msg) {
     echo '<li>',$msg,'</li>'; 
   }
   echo '</ul>';
-  unset($_SESSION['ERRMSG_ARR']);
+  unset($_SESSION['oerrmsg_arr']);
 }
 ?>  
         <center>
