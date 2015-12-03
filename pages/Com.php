@@ -6,7 +6,7 @@ $reponse = $conn->query("SELECT * FROM Commentaire_Produit WHERE ID_produit={$id
 
 
 while ($donnees = $reponse->fetch()){
-	echo "<div id='con'><h4>" . $donnees['Nom'] . "_" . $donnees['Prenom'] . ":<h3 id='loi' style='margin-left:3%'>" . $donnees['Description'] . "</h3></h4></div>";
+	echo "<div id='con'><h4>" . $donnees['Nom'] . "_" . $donnees['Prenom'] . ":<h3 id='loi' style='margin-left:3%, margin-right:1%'>" . $donnees['Description'] . "</h3></h4></div>";
 }
 
 $reponse->closeCursor();
