@@ -50,7 +50,7 @@ else if($Prenom == '') {
 	$result2->execute();
 	$rows = $result2->fetch(PDO::FETCH_NUM);
 	if($rows > 0) {
-	$result = $conn->prepare("UPDATE User (Pass,Date_modification) SET Pass= :pass , Date_modification= NOW() WHERE mail= :user AND Nom= :Nom AND Prenom= :Prenom AND Question= :Question");
+	$result = $conn->prepare("UPDATE User SET Pass= :pass , Date_modification= NOW() WHERE mail= :user AND Nom= :Nom AND Prenom= :Prenom AND Question= :Question");
 	$result->bindParam(':pass', $passh);
 	$result->bindParam(':user', $user);
 	$result->bindParam(':Nom', $Nom);
