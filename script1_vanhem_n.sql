@@ -93,40 +93,21 @@ INSERT INTO Categories (Libelle,Description, image,Date_creation,Date_modificati
 INSERT INTO Categories (Libelle,Description, image,Date_creation,Date_modification) VALUES ('Maison', 'Objets artisanaux pour le confort et la déco.', "../assets/encens.png",NOW(), NOW());
 INSERT INTO Categories (Libelle,Description, image,Date_creation,Date_modification) VALUES ('Bijoux', 'Bijoux faits main, pour sublimer votre beauté.', "../assets/bijoux.png",NOW(), NOW());
 
-INSERT INTO Commentaire_Produit (ID_produit,Nom,Prenom,Description) VALUES ('1', 'Nom', 'Prenom', 'ceci ets un commentaire');
-INSERT INTO Commentaire_Produit (ID_produit,Nom,Prenom,Description) VALUES ('1', 'Nom', 'Prenom', "c'est le deuxiemme la");
+INSERT INTO Commentaire_Produit (ID_produit,Nom,Prenom,Description) VALUES ('1', 'Jawad', 'paul', 'Super, merci !');
+INSERT INTO Commentaire_Produit (ID_produit,Nom,Prenom,Description) VALUES ('3', 'Copilard', 'Julien', "pas ouf :(");
 
-#a faire
-
-INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('1', '1');
+#new
 INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('1', '1');
 INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('1', '2');
 INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('1', '3');
-INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('1', '4');
-INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('1', '5');
-INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('1', '6');
-INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('1', '7');
-INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('1', '8');
-INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('1', '9');
-INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('1', '10');
-INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('1', '11');
-INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('1', '12');
-INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('1', '13');
-INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('1', '14');
-INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('1', '15');
-INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('1', '16');
-INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('1', '17');
-INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('1', '18');
-INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('1', '19');
-INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('1', '20');
-INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('2', '21');
-INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('2', '22');
-INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('2', '23');
-INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('2', '24');
-INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('2', '25');
-INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('2', '26');
-INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('2', '27');
-INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('2', '28');
+#top
+INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('2', '5');
+INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('2', '4');
+INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('2', '6');
+
+
+
+#a faire
 
 INSERT INTO Produit_User(ID_utilisateur, ID_produit) VALUES ('5', '19');
 INSERT INTO Produit_User(ID_utilisateur, ID_produit) VALUES ('3', '20');

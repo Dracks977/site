@@ -33,34 +33,8 @@ include("pages/i_headerD.php");
                 <h1 id= "toph">Nouveauté :</h1>
             </aside>
         </section>
-         <a href="pages/dproduit.php?p=4"><section id="section01">
-            <aside>
-                <h1 id="tpop">ETHIQUABLE - Thé Vert Hibiscus Gingembre</h1>
-                <center><image src="assets/the.png" width="170"></image></center>
-            </aside>
-            <article>                
-                <center><h4>Ce thé puissant vous fera voyager au coeur du Vietnam.</h4></center>
-            </article>
-        </section></a>
-         <a href="pages/dproduit.php?p=5"><section id="section01">
-            <aside>
-                <h1 id="tpop">Lanterne Fnar</h1>
-                <center><image src="assets/lanterne.png" width="100"></image></center>
-            </aside>
-            <article>                
-                <center><h4>Cette magnifique lanterne typiquement marocaine éclairera votre interieur avec la douceur d'un soleil couchant</h4></center>
-            </article>
-        </section></a>
-         <a href="pages/dproduit.php?p=6"><section id="section01">
-            <aside>
-                <h1 id="tpop">Bracelet Ethnique Manchette</h1>
-                <center><image src="assets/bracelet.png" width="190"></image></center>
-            </aside>
-            <article>                
-                <center><h4>Ce bracelet faits main au Kenya parera avec classe votre beauté.</h4></center>
-            </article>
-        </section></a>
-                <section id="section02">
+                 <?php include("pages/idcatop2.php") ?>
+        <section id="section02">
             <aside>
                 <h1 id="squi">Qui sommes nous ?</h1>
                 <p>Sally et Nathan, deux étudiants engagés dans la cause équitable, nous avons voulu participer à la cause altermondialiste en proposant un site regroupant à la 
