@@ -1,6 +1,6 @@
 <?php
 session_start();
-$Lid = $_POST["id"];
+$Lid = $_GET["id"];
 $LNom = $_SESSION["User_Nom"];  
 $LPrenom = $_SESSION["User_Prenom"];
 $LDescription = $_POST["lcom"]; 
