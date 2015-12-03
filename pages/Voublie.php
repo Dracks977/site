@@ -52,6 +52,10 @@ else if($Prenom == '') {
 	if($rows > 0) {
 	$result = $conn->prepare("UPDATE User (Pass,Date_modification) SET Pass= :pass , Date_modification= NOW() WHERE mail= :user AND Nom= :Nom AND Prenom= :Prenom AND Question= :Question");
 	$result->bindParam(':pass', $passh);
+	$result->bindParam(':user', $user);
+	$result->bindParam(':Nom', $Nom);
+	$result->bindParam(':Prenom', $Prenom);
+	$result->bindParam(':Question', $Question);
 	$result->execute();
 	header("location: connexion.php");
 	}
