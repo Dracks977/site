@@ -24,7 +24,7 @@ catch(PDOException $Le)
 if ($LDescription == '') {
 	$Lerrmsg_arr[] = 'Vous avez oublié votre commentaire';
 	$Lerrflag = true;
-	header("location: dproduit.php?p=" . $id);
+	header("location: dproduit.php?p=" . $Lid);
 }
 else{
 
