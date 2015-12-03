@@ -21,9 +21,9 @@ $Description = $_POST["texte"];
 //     echo "Connection failed (check config.php):    " . $e->getMessage();
 //     exit();
 //     }
-echo $Nom;
-echo $Prenom;
-echo$id;
+echo $_SESSION["User_Nom"];
+echo $_SESSION["User_Prenom"];
+echo $id;
 echo $Description;
 
 
