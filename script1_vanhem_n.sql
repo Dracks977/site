@@ -51,7 +51,7 @@ CREATE TABLE Categorie_Produit
 );
 CREATE TABLE Commentaire_Produit
 (
-    ID_Commentaire TINYINT,
+    ID INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
     ID_produit INT,
     Nom CHAR(32),
     Prenom CHAR(32),
@@ -93,6 +93,7 @@ INSERT INTO Categories (Libelle,Description, image,Date_creation,Date_modificati
 INSERT INTO Categories (Libelle,Description, image,Date_creation,Date_modification) VALUES ('Maison', 'Objets artisanaux pour le confort et la déco.', "../assets/encens.png",NOW(), NOW());
 INSERT INTO Categories (Libelle,Description, image,Date_creation,Date_modification) VALUES ('Bijoux', 'Bijoux faits main, pour sublimer votre beauté.', "../assets/bijoux.png",NOW(), NOW());
 
+INSERT INTO Commentaire_Produit (ID_produit,Nom,Prenom,Description) VALUES ('1', 'Nom', 'Prenom', 'ceci ets un commentaire');
 
 #a faire
 
