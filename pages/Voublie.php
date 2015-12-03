@@ -1,7 +1,7 @@
 <?php
 session_start();
-$errmsg_arr = array();
-$errflag = false;
+$oerrmsg_arr = array();
+$ooerrflag = false;
 // configuration
 include('config.php');
  try {
@@ -24,20 +24,20 @@ $Question = $_POST['Question'];
 $passh = hash_hmac('sha256', $password, '123789');
 
 if($user == '') {
-	$errmsg_arr[] = 'Vous avez oublié votre mail';
-	$errflag = true;
+	$oerrmsg_arr[] = 'Vous avez oublié votre mail';
+	$oerrflag = true;
 }
 else if($password == '') {
-	$errmsg_arr[] = 'Vous avez oublié votre mot de pass';
-	$errflag = true;
+	$oerrmsg_arr[] = 'Vous avez oublié votre mot de pass';
+	$oerrflag = true;
 }
 else if($Nom == '') {
-	$errmsg_arr[] = 'Vous avez oublié votre Nom';
-	$errflag = true;
+	$oerrmsg_arr[] = 'Vous avez oublié votre Nom';
+	$oerrflag = true;
 }
 else if($Prenom == '') {
-	$errmsg_arr[] = 'Vous avez oublié votre adresse';
-	$errflag = true;
+	$oerrmsg_arr[] = 'Vous avez oublié votre adresse';
+	$oerrflag = true;
 }
 
 // verif compte
@@ -60,9 +60,9 @@ else if($Prenom == '') {
 	header("location: connexion.php");
 	}
 	else{
-		$errmsg_arr[] = 'Vous avez deja un compte';
-		$errflag = true;
-		$_SESSION['ERRMSG_ARR'] = $errmsg_arr;
+		$oerrmsg_arr[] = 'Vous avez deja un compte';
+		$oerrflag = true;
+		$_SESSION['oerrmsg_arr'] = $oerrmsg_arr;
 		header("location: oublie.php");
 	}	
 ?>
