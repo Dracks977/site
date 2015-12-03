@@ -49,6 +49,14 @@ CREATE TABLE Categorie_Produit
     ID_categorie TINYINT,
     ID_produit INT
 );
+CREATE TABLE Commentaire_Produit
+(
+    ID_Commentaire TINYINT,
+    ID_produit INT,
+    Nom CHAR(32),
+    Prenom CHAR(32),
+    Description VARCHAR(510)
+);
 CREATE TABLE Produit_User
 (
     ID_produit INT,
