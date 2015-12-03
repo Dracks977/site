@@ -27,7 +27,7 @@ include("pages/i_headerD.php");
                 <h1 id= "toph">Top des ventes :</h1>
             </aside>
         </section>
-                 <?php include("idcatop.php") ?>
+                 <?php include("pages/idcatop.php") ?>
         <section id="top">
             <aside>
                 <h1 id= "toph">Nouveauté :</h1>
