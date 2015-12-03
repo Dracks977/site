@@ -10,7 +10,7 @@ $Lerrmsg_arr = array();
 $Lerrflag = false;
 // configuration
  try {
-    $Lconn = new PDO("mysql:host=$dbhost;dbname=$dbname",$dbuser,$dbpass);
+    $Lconn = new PDO("mysql:host=$dbhost;dbname=$dbname;charset=utf8",$dbuser,$dbpass);
     // set the PDO error mode to exception
     $Lconn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     echo "Connected successfully"; 
