@@ -45,7 +45,7 @@ else if($password == '') {
 	}
 	else{
 		$errmsg_arr[] = "mauvaise combinaison, <a href='oublie.php'
-		>si vous avez oublier votre mot de pass clicker ici<a>";
+		>Mot de pass oublié</a>";
 		$errflag = true;
 	}
 	if($errflag) {
