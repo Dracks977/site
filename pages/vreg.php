@@ -20,6 +20,7 @@ $Prenom = $_POST['Prenom'];
 $user = $_POST['mail'];
 $password = $_POST['pass'];
 $adr = $_POST['adr'];
+$Question = $_POST['Question'];
 
 $passh = hash_hmac('sha256', $password, '123789');
 
@@ -53,11 +54,12 @@ else if($adr == '') {
 	header("location: inscription.php");
 	}
 	else{
-	$result = $conn->prepare("INSERT INTO User (Nom,Prenom,Adresse,Mail,Pass,Date_creation,Date_modification) VALUES (:Nom, :Prenom, :adr, :user, :password, NOW(), NOW())");
+	$result = $conn->prepare("INSERT INTO User (Nom,Prenom,Adresse,Mail,Pass,Question,Date_creation,Date_modification) VALUES (:Nom, :Prenom, :adr, :user, :password, :Question,NOW(), NOW())");
 	$result->bindParam(':user', $user);
 	$result->bindParam(':Nom', $Nom);
 	$result->bindParam(':Prenom', $Prenom);
 	$result->bindParam(':adr', $adr);
+	$result->bindParam(':Question', $Question;
 	$result->bindParam(':password', $passh);
 	$result->execute();
 	if($errflag) {

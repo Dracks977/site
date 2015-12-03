@@ -48,6 +48,7 @@ if( isset($_SESSION['ERRMSG_ARR']) && is_array($_SESSION['ERRMSG_ARR']) && count
             Mail    : <input size="25px" type="email" name="mail" placeholder="mail@domaine.fr" pattern='^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$' required><br>
             Adresse : <input id="ins3" size="25px" type="text" name="adr" placeholder="5 rue, vile 94600" required><br>
             Pass    : <input size="25px" type="password" name="pass" placeholder="Mot de Pass" required><br>
+			Question : <input id="ins3" size="25px" type="text" name="Question" placeholder="Quel est votre animal préféré" required><br>
             <a><input type="submit" placeholder="Submit" value="Submit"></a>
           </form>
         </center>
