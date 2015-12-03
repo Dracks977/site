@@ -1,9 +1,9 @@
 <?php
 session_start();
-$Lid = $_GET["id"];
+$Lid = $_POST["id"];
 $LNom = $_SESSION["User_Nom"];  
 $LPrenom = $_SESSION["User_Prenom"];
-$LDescription = $_POST["texte"]; 
+$LDescription = $_POST["lcom"]; 
 
 // include('config.php');
 // $errmsg_arr = array();
@@ -23,8 +23,8 @@ $LDescription = $_POST["texte"];
 //     }
 echo $_SESSION["User_Nom"];
 echo $_SESSION["User_Prenom"];
-echo $id;
-echo $Description;
+echo $Lid;
+echo $LDescription;
 
 
 // if ($Description == '') {
