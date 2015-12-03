@@ -21,10 +21,10 @@ $Description = $_POST["texte"];
 //     echo "Connection failed (check config.php):    " . $e->getMessage();
 //     exit();
 //     }
-var_dump($Nom);
-var_dump($Prenom);
-var_dump($id);
-var_dump($Description);
+echo $Nom;
+echo $Prenom;
+echo$id;
+echo $Description;
 
 
 // if ($Description == '') {
