@@ -13,7 +13,7 @@ while ($donnees = $reponse->fetch()){
        <article>                
          <center><h4>" . $donnees['Description'] . "</h4></center>
        </article>
-        </section></a>"
+        </section></a>";
 
 }
 $reponse->closeCursor();
