@@ -14,7 +14,7 @@
   
    <a id="po" href="dest.php">deconection</a>
         <?php 
-        echo $_SESSION['User_role'];
+        var_dump($_SESSION);
         if ($_SESSION['User_role'] == 1){
         echo "<a id='po' href='Admin_xc965896dsad875545dasda545454/'>Panel Admin</a>";
      }
