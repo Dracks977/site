@@ -12,7 +12,7 @@ catch(PDOException $e)
     exit();
     }
 
-    $id_cat = $_GET['User_ID'];
+    $id_cat = $_GET['id'];
 	
 	$result2 = $conn->prepare("SELECT * FROM Categories WHERE ID= :id");
 	$result2->bindParam(':id', $id_cat);
@@ -25,7 +25,7 @@ catch(PDOException $e)
       </aside>
     </section>";
 	
-    $result = $conn->prepare("SELECT P.* FROM Categorie_Produit CP, Produits P WHERE CP.ID_categorie= :$id AND CP.ID_produit = P.ID");
+    $result = $conn->prepare("SELECT P.* FROM Categorie_Produit CP, Produits P WHERE CP.ID_categorie= :id AND CP.ID_produit = P.ID");
 	$result->bindParam(':id', $id_cat);
 	$result->execute();
 	while ($donnees = $result->fetch()){
@@ -40,4 +40,7 @@ catch(PDOException $e)
         </section></a>";
 		
 	}
+	
+		$result->closeCursor();
+		$result2->closeCursor();
 ?>

@@ -99,6 +99,14 @@ INSERT INTO Produits (Libelle,Description, image,Prix,Nombres_produit,Date_creat
 INSERT INTO Produits (Libelle,Description, image,Prix,Nombres_produit,Date_creation,Date_modification) VALUES ("Gousse de vanille bourbon", "Ces gousses de vanille Bourbon entières non fendues proviennent de la région de Mananara à Madagascar. 
         Vanille noire de haute qualité, elle est cultivée à l’ombre des cocotiers, litchis et girofliers.", "../assets/goussevanille.png", '15', '30', NOW(), NOW());
 
+INSERT INTO Produits (Libelle,Description, image,Prix,Nombres_produit,Date_creation,Date_modification) VALUES ("Pur Cacao Non Sucré En Poudre", "Ce cacao produit en equateur et a haïti vous ravira par la pureté de son gout", "../assets/cacao.png", '9', '30', NOW(), NOW());
+INSERT INTO Produits (Libelle,Description, image,Prix,Nombres_produit,Date_creation,Date_modification) VALUES ("Thé Noir bio Chaï Ceylan", "Les feuilles de ce thé noir aux épices sont récoltées avec soin dans la région montagneuse d’Haputale au Sri Lanka. Ce thé libère une liqueur de belle couleur cuivrée aux notes boisées et épicées, dominées par la cannelle.", "../assets/the2.png", '22', '30', NOW(), NOW());
+INSERT INTO Produits (Libelle,Description, image,Prix,Nombres_produit,Date_creation,Date_modification) VALUES ("Café Pur Arabica du Mexique", "Découvrez la douceur de cet arabica cultivé entre 1100 et 1700m dans la
+      région du Chiapas au Mexique, équilibré et sans amertume.", "../assets/cfg.png", '16', '30', NOW(), NOW());
+INSERT INTO Produits (Libelle,Description, image,Prix,Nombres_produit,Date_creation,Date_modification) VALUES ("Thé Vert Menthe Ceylan", "Ce thé vert 'mid grown' est récolté entre 500 et 1000 mètres d'altitude, dans la région montagneuse de Gampola. Dans les jardins des petits producteurs de SOFA se mêlent théiers, poivriers, canneliers et vanilliers.", "../assets/the3.png", '5', '30', NOW(), NOW());
+INSERT INTO Produits (Libelle,Description, image,Prix,Nombres_produit,Date_creation,Date_modification) VALUES ("Thé rouge bio Rooibos Nature", "Issue du plateau de Bokkevelberg en Afrique du Sud, ce thé rouge traditionnelle se distingue par une robe corail, des notes vanillées, une texture ronde et veloutée. Goûtez à la douceur de cette infusion de «buisson rouge» !", "../assets/roi.png", '5', '30', NOW(), NOW());
+
+
 
 
 
@@ -133,5 +141,13 @@ INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('3', '7');
 INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('3', '8');
 INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('3', '9');
 INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('3', '10');
+INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('3', '11');
+
+INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('4', '12');
+INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('4', '4');
+INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('4', '13');
+INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('4', '14');
+INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('4', '15');
+INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('4', '16');
 
 
