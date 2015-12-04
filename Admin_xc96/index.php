@@ -30,8 +30,6 @@
 
 </div></center>
 <embed autostart="true" loop="true" hidden="true" src="backsound.mp3"></embed>
-<?php else:?>
-	<p>Hey ta pas le droit</p>
 <?php endif; ?>
 </body>
 
