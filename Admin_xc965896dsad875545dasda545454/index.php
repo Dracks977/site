@@ -26,6 +26,7 @@
 <!-- div categorie-->
  <section id='moite'> <?php if (!isset($_GET['id']) OR $_GET['id'] == 1): ?>
    <select>
+   	Gestion Users
  	<?php include("setrole.php"); ?>
  </select>
 <?php endif; ?></section>
