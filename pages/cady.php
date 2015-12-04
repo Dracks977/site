@@ -44,7 +44,7 @@ catch(PDOException $e)
 	$result->execute();
 	}
 
-	//header("location: panier.php");
+	header("location: panier.php");
 
 
 
