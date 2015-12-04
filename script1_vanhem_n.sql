@@ -59,7 +59,7 @@ CREATE TABLE Commentaire_Produit
 );
 CREATE TABLE Produit_User
 (
-    ID INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    Quant INT DEFAULT 1,
     ID_produit INT,
     ID_utilisateur INT
 );
@@ -107,9 +107,3 @@ INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('2', '4');
 INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('2', '6');
 
 
-
-#a faire
-
-INSERT INTO Produit_User(ID_utilisateur, ID_produit) VALUES ('5', '19');
-INSERT INTO Produit_User(ID_utilisateur, ID_produit) VALUES ('3', '20');
-INSERT INTO Produit_User (ID_utilisateur, ID_produit) VALUES ('9', '1');

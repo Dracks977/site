@@ -33,7 +33,7 @@ include("headerD.php");
 	<center><table>
 	    <tr>
 	      <th>Libellé</th>
-	      <th> </th>
+	      <th>Quantité</th>
 	      <th>Prix HT (€)</th>
 		<th>Prix TTC (€)</th>
 	    </tr>

@@ -17,16 +17,14 @@ catch(PDOException $e)
 
 
 
-    $result = $conn->prepare("SELECT P.* FROM Produits P, Produit_User PU WHERE P.ID=PU.ID_produit AND PU.ID_utilisateur = :id_user");
+    $result = $conn->prepare("SELECT P.*, PU.Quant FROM Produits P, Produit_User PU WHERE P.ID=PU.ID_produit AND PU.ID_utilisateur = :id_user ");
 	$result->bindParam(':id_user', $id_user);
 	$result->execute();
-
 	while ($donnees = $result->fetch()){
-
 		$prix = $donnees['Prix'] + (($donnees['Prix'] + 19.6) / 100);
 		echo "<tr>
 	      <td><image src='" . $donnees['image'] . "' width='100'></image><br />" . $donnees['Libelle'] . "</td>
-	      <td>
+	      <td><center>" . $donnees['Quant'] . "</center><a id='po2'>+</a>
 	      <form action='Sprop.php?idp=" . $donnees['ID'] ."&idu=" . $id_user  . "' method='POST'>
 	      <input id='po2' type='submit' value='-'></td>
 	      </form>
@@ -35,4 +33,5 @@ catch(PDOException $e)
 	    </tr>";
 	}
 	$result->closeCursor();
+
 ?>
