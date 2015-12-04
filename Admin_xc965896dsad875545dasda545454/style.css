@@ -14,8 +14,18 @@ select {
     -webkit-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
     -moz-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
     box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
-    width: 400px;
+    width: 220px;
     height: 30px;
+}
+
+input[type=submit] {
+	margin:5px;
+    padding:5px 15px; 
+    background:#ffffff; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
 }
 
 #header {

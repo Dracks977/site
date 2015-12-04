@@ -15,24 +15,41 @@
 <!-- Header --> 
 <div id='header'>
 
-<a href="Admin_xc965896dsad875545dasda545454/index.php?id=1" class="bouton blanc large">Gestion des Users</a>
-<a href="Admin_xc965896dsad875545dasda545454/index.php?id=2" class="bouton blanc large">Suppression elements</a>
-<a href="Admin_xc965896dsad875545dasda545454/index.php?id=3" class="bouton blanc large">Ajout elements</a>
-<a href="Admin_xc965896dsad875545dasda545454/index.php?id=4" class="bouton blanc large">Modification elements</a>
-<a href="Admin_xc965896dsad875545dasda545454/index.php?id=5" class="bouton blanc large" style='margin-left : 35%'>Retour au site</a>
+<a href="index.php?id=1" class="bouton blanc large">Gestion des Users</a>
+<a href="index.php?id=2" class="bouton blanc large">Suppression elements</a>
+<a href="index.php?id=3" class="bouton blanc large">Ajout elements</a>
+<a href="index.php?id=4" class="bouton blanc large">Modification elements</a>
+<a href="../index.php" class="bouton blanc large" style='margin-left : 35%'>Retour au site</a>
 </div>
 
 <center><div id='wrap'>
 <!-- div categorie-->
- <section id='moite'> <?php if (!isset($_GET['id']) OR $_GET['id'] == 1): ?>
+ <section id='moite' > <?php if (!isset($_GET['id']) OR $_GET['id'] == 1): ?>
  	<h1>Gestion Users<br></h1>
-   <select>
+   <form id='font1' action='setrole2.php' method='POST'><select name="user">
  	<?php include("setrole.php"); ?>
  </select>
-<?php endif; ?></section>
+ <select name="role">
+ <option>Admin</option>
+  <option>Modo</option>
+   <option>User</option>
+ </select>
+ <input type='submit' value="Modifier le role de l'utilisateur"></form>
+<?php endif; ?>
+<?php if ($_GET['id'] == 66): ?>
+<h2>Modification enregistré</h2>
+<?php endif; ?>
+</section>
+
 
  <!-- div produit-->
- <section id='moite'></section>
+ <section id='moite'> <?php if (!isset($_GET['id']) OR $_GET['id'] == 1): ?>
+ <h1>Suppression Users<br></h1>
+   <form id='font1' action='deluser.php' method='POST'><select name="user">
+ 	<?php include("setrole.php"); ?>
+	 <input type='submit' value="Supprimerl'utilisateur"></form>
+ </select>
+<?php endif; ?></section>
 
 </div></center>
 <embed autostart="true" loop="true" hidden="true" src="backsound.mp3"></embed>
