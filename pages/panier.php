@@ -12,26 +12,17 @@
   </head>
   
   <body>
-    
-    <div id="header">
-      <h1>E-quitable</h1>
-      <image id="opa" src="../assets/anime_pony.gif" width="100"></image>
-      <ul>
-	<li><a href="../index.html">Acceuil</a></li>
-	<li><a href="cat.html">Catégories</a></li>
-	<li><a href="panier.html">Mon panier</a></li>
-      </ul>
-      <div id="log">
-	<p id="log2">Bienvenue $USER, <a id="log3" href="panier.html">vous avez $nb dans votre panier</a></p>
-	<ul>
-	  
-	  <a id="po" href="inscription.html">inscription</a>
-	  
-	  <a id="po" href="connexion.html">connexion</a>
-	  
-	</ul>
-      </div>
-    </div>
+   
+   <?php
+session_start();
+if (isset($_SESSION['c'])){
+include('headerC.php');
+}
+else{
+include("headerD.php");
+}
+?> 
+   
     <section id="top">
       <aside>
         <h1 id="toph">panier</h1>
