@@ -13,8 +13,7 @@
 <body>
 <?php 
 session_start();
-echo $_SESSION['User_role'];
-if ($_SESSION['User_role'] == 1){
+if (isset($_SESSION['User_role']) AND $_SESSION['User_role'] == 1){
 echo "<!-- Header --> 
 <div id='header'>
 
