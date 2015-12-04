@@ -5,9 +5,9 @@ body {
     margin: 0px auto;
 }
 
-#Select{
-  background: transparent;
-   width: 350px;
+.styled-select select {
+   background: transparent;
+   width: 300px;
    padding: 5px;
    font-size: 16px;
    line-height: 1;
@@ -15,7 +15,7 @@ body {
    border-radius: 0;
    height: 34px;
    -webkit-appearance: none;
-}
+   }
 
 #header {
 	background-image: url("1.jpg");
