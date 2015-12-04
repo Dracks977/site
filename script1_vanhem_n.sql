@@ -59,6 +59,7 @@ CREATE TABLE Commentaire_Produit
 );
 CREATE TABLE Produit_User
 (
+    ID INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
     ID_produit INT,
     ID_utilisateur INT
 );
