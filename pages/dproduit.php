@@ -30,7 +30,7 @@ echo "<section id='con'>
       <aside>
         <form id='font1' action='Lcom.php?id=" . $id ."' method='POST'> 
            <h4>Laissez Nous un commentaire :<input size='25px' name='lcom' id='comment' type='text'>
-           <a><input type='submit' value='Submit'></a></h4>
+           <a><input type='submit' value='Submit'></a></h4></form>
       </aside>
     </section>";
 }

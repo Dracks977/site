@@ -21,7 +21,7 @@ echo "<section id='top'>
           			"<ul>
                     <form id='font1' action='cady.php?id=" . $donnees['ID'] ."' method='POST'> 
                 		<li><input type='submit' value='ajouter au panier'></li>
-                		<li id='prix'>Prix : " . $donnees['Prix'] . "€</li>
+                		<li id='prix'>Prix : " . $donnees['Prix'] . "€</li></form>
               		</ul>
             	</h4>
           	</article>
@@ -42,7 +42,7 @@ echo "<section id='top'>
                 "<ul>
                     <form id='font1' action='connexion.php' method='POST'> 
                     <li><input type='submit' value='ajouter au panier'></li>
-                    <li id='prix'>Prix : " . $donnees['Prix'] . "€</li>
+                    <li id='prix'>Prix : " . $donnees['Prix'] . "€</li></form>
                   </ul>
               </h4>
             </article>
