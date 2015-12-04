@@ -6,7 +6,7 @@ body {
 }
 
 .styled-select select {
-   background: transparent;
+   background: black;
    width: 300px;
    padding: 5px;
    font-size: 16px;
