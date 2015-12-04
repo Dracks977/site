@@ -20,5 +20,5 @@ $result = $conn->prepare("INSERT INTO Produit_User (ID_produit,ID_utilisateur) V
 	$result->bindParam(':ID_produit', $id_prod);
 	$result->bindParam(':ID_utilisateur', $id_user);
 	$result->execute();
-	header("location pannier.php");
+	header("location: panier.php");
 ?>
