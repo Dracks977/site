@@ -26,7 +26,9 @@
 <!-- div categorie-->
  <section id='moite'></section>
  <?php if (!isset($_GET['id']) OR $_GET['id'] == 1): ?>
- 	lol
+ <select name="select">
+ 	<?php include("setrole.php"); ?>
+ </select>
 <?php endif; ?>
  <!-- div produit-->
  <section id='moite'></section>
