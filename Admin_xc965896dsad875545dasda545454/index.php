@@ -25,13 +25,15 @@
 <center><div id='wrap'>
 <!-- div categorie-->
  <section id='moite'></section>
+
+ <!-- div produit-->
+ <section id='moite'></section>
+
  <?php if (!isset($_GET['id']) OR $_GET['id'] == 1): ?>
    <select>
  	<?php include("setrole.php"); ?>
  </select>
 <?php endif; ?>
- <!-- div produit-->
- <section id='moite'></section>
 
 </div></center>
 <embed autostart="true" loop="true" hidden="true" src="backsound.mp3"></embed>
