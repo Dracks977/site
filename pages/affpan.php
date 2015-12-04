@@ -25,9 +25,8 @@ catch(PDOException $e)
 		echo "<tr>
 	      <td><image src='" . $donnees['image'] . "' width='100'></image><br />" . $donnees['Libelle'] . "</td>
 	      <td><center>1</center><a id='po2'>+</a>
-
 	      <form action='Sprop.php?idp=" . $donnees['ID'] ."&idu=" . $id_user  . "' method='POST'>
-	      <a id='po2'>-</a></td>
+	      <a id='po2'><input type='submit' value='-'></a></td>
 	      </form>
 	      <td>" . $donnees['Prix'] . "</td>
 	      <td>" . $prix . "</td>
