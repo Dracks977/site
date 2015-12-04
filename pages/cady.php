@@ -25,8 +25,9 @@ catch(PDOException $e)
 	$rows = $result2->fetch(PDO::FETCH_NUM);
 	$donnees = $result2->fetch();
 	if($rows > 0) {
-		$Quant = ($donnees['Quant'] + 1);
-		echo $donnees['Quant'];
+		
+	 $dfg = $donnees['Quant'];
+	 $Quant = $dfg + 1;
 		echo $Quant;
 	$result3 = $conn->prepare("UPDATE Produit_User SET Quant= '$Quant' WHERE ID_produit = '$id_prod'");
 	$result3->execute();
