@@ -25,7 +25,7 @@
 <center><div id='wrap'>
 <!-- div categorie-->
  <section id='moite'> <?php if (!isset($_GET['id']) OR $_GET['id'] == 1): ?>
- 	Gestion Users
+ 	<h1>Gestion Users<br></h1>
    <select>
  	<?php include("setrole.php"); ?>
  </select>
