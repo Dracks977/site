@@ -24,7 +24,11 @@ catch(PDOException $e)
 		$prix = $donnees['Prix'] + (($donnees['Prix'] + 19.6) / 100);
 		echo "<tr>
 	      <td><image src='" . $donnees['image'] . "' width='100'></image><br />" . $donnees['Libelle'] . "</td>
-	      <td><center>1</center><a id='po2'>+</a><a id='po2'>-</a></td>
+	      <td><center>1</center><a id='po2'>+</a>
+
+	      <form action='Sprop.php?idp=" . $donnees['ID'] ."&idu=" . $id_user  . "' method='POST'>
+	      <a id='po2'>-</a></td>
+	      </form>
 	      <td>" . $donnees['Prix'] . "</td>
 	      <td>" . $prix . "</td>
 	    </tr>";
