@@ -11,7 +11,7 @@
 </head>
 
 <body>
-<?php if(isset($_SESSION['User_role']) AND $_SESSION['User_role'] == 1):  ?>
+<?php session_start(); if(isset($_SESSION['User_role']) AND $_SESSION['User_role'] == 1):  ?>
 <!-- Header --> 
 <div id='header'>
 
