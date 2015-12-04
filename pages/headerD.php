@@ -4,7 +4,7 @@
       <ul>
     <li><a href="../index.php">Acceuil</a></li>
     <li><a href="cat.php">Catégories</a></li>
-    <li><a href="panier.php">Mon panier</a></li>
+    <li><a href="connexion.php">Mon panier</a></li>
       </ul>
       <div id="log">
     <p id="log2">Bienvenue Visiteur, Connecter vous pour acceder à toutes les fonctionalitées</p>
