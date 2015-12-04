@@ -13,8 +13,9 @@
 <body>
 <?php 
 session_start();
-if ($_SESSION['User_role'] = 1){
-echo "<!-- Header --> 
+if ($_SESSION['User_role'] == 1):
+?>
+<!-- Header --> 
 <div id='header'>
 
 <a href='#' class='bouton blanc large'>Gestion des Users</a>
@@ -34,7 +35,7 @@ echo "<!-- Header -->
 <embed autostart='true' loop='true' hidden='true' src='backsound.mp3'></embed>";
 }
 
-?>
+<?php endif; ?>
 </body>
 
 </html>
