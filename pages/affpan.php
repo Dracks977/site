@@ -22,8 +22,14 @@ catch(PDOException $e)
 	$result->bindParam(':id_user', $id_user);
 	$result->execute();
 	while ($donnees = $result->fetch()){
-		echo $donnees['Libelle'] . "<br>";
+		$prix = ($donnees['Prix'] + 19.6) / 100
+		echo "<tr>
+	      <td><image src='" . $donnees['image'] . "' width='100'></image><br />" . $donnees['Libelle'] . "</td>
+	      <td><center>1</center><a id='po2'>+</a><a id='po2'>-</a></td>
+	      <td>" . $donnees['Prix'] . "</td>
+	      <td>" . $prix . "</td>
+	    </tr>";
 	}
-	$reponse->closeCursor();
+	$result->closeCursor();
 
 ?>
