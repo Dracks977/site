@@ -13,6 +13,10 @@
     <a id="po" href="pages/onbuild">gestion du compte</a>
 	
 	 <a id="po" href="pages/dest.php">deconection</a>
+     <?php if ($_SESSION['User_role'] == 1){
+        echo "<a id="po" href='Admin_xc965896dsad875545dasda545454/'>Panel Admin</a>"
+     }
+     ?>
 	
     </ul>
 </div>
