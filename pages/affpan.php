@@ -1,6 +1,5 @@
 <?php
 include('config.php');
-session_start();
 
 try {
     $conn = new PDO("mysql:host=$dbhost;dbname=$dbname;charset=utf8",$dbuser,$dbpass);
