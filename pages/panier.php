@@ -30,7 +30,6 @@ include("headerD.php");
     </section>
         
     <section id="con">
-      <form method="post" action="panier.php">
 	<center><table>
 	    <tr>
 	      <th>Libellé</th>
@@ -50,7 +49,6 @@ include("headerD.php");
 	    <li><a id="fina" href="../index.html">Finaliser la commande</a></li>
 	  </ul>
 	</center>
-      </form>
     </section>
     
     <div id="footer">
