@@ -38,12 +38,6 @@ include("headerD.php");
 		<th>Prix TTC (€)</th>
 	    </tr>
 	  <?php include("affpan.php"); ?>
-	    <tr id="fin">
-	      <th>total TTC :</th>
-	      <th> </th>
-	      <th> </th>
-	      <th>113.28</th>
-	    </tr>
 	  </table>
 	  <ul>
 	    <li><a id="fina" href="../index.html">Finaliser la commande</a></li>

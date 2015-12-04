@@ -13,7 +13,7 @@ catch(PDOException $e)
     }
 
     $id_user = $_SESSION['User_ID'];
-
+    $total = 0;
 
 
 
@@ -21,17 +21,27 @@ catch(PDOException $e)
 	$result->bindParam(':id_user', $id_user);
 	$result->execute();
 	while ($donnees = $result->fetch()){
-		$prix = $donnees['Prix'] + (($donnees['Prix'] + 19.6) / 100);
+		$Rprix = $donnees['Prix'] * $donnees['Quant'];
+		$prix = $Rprix + (($Rprix + 20) / 100);
 		echo "<tr>
 	      <td><image src='" . $donnees['image'] . "' width='100'></image><br />" . $donnees['Libelle'] . "</td>
 	      <td><center>" . $donnees['Quant'] . "</center>
 	      <form action='Sprop.php?idp=" . $donnees['ID'] ."&idu=" . $id_user  . "' method='POST'>
 	      <input id='po2' type='submit' value='X'></td>
 	      </form>
-	      <td>" . $donnees['Prix'] . "</td>
+	      <td>" . $Rprix . "</td>
 	      <td>" . $prix . "</td>
 	    </tr>";
+	    $total = $total + $prix;
 	}
+
+	echo "<tr id='fin'>
+	      <th>total TTC :</th>
+	      <th> </th>
+	      <th> </th>
+	      <th>" . $total . "</th>
+	    </tr>";
+
 	$result->closeCursor();
 
 ?>
