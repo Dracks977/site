@@ -25,11 +25,8 @@ catch(PDOException $e)
 	$rows = $result2->fetch(PDO::FETCH_NUM);
 	$donnees = $result2->fetch();
 	if($rows > 0) {
-		$Quant = 55;
-		echo "UPDATE Produit_User SET Quant= '$Quant' WHERE ID_produit = '$id_prod'";
+		$Quant = ($donnees['Quant'] + 1);
 	$result3 = $conn->prepare("UPDATE Produit_User SET Quant= '$Quant' WHERE ID_produit = '$id_prod'");
-	//$result3->bindParam(':Quant', $Quant);
-	//$result3->bindParam(':ID_produit', $id_prod);
 	$result3->execute();
 	}
 	else{
@@ -39,6 +36,7 @@ catch(PDOException $e)
 	$result->execute();
 	}
 
+	header("location: panier.php");
 
 
 
