@@ -14,9 +14,11 @@ select {
     -webkit-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
     -moz-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
     box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
-    width: 220px;
+    min-width: 320px;
+	width: auto;
     height: 30px;
 }
+
 
 input[type=submit] {
 	margin:5px;
