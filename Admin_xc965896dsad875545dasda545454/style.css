@@ -5,6 +5,18 @@ body {
     margin: 0px auto;
 }
 
+#Select{
+  background: transparent;
+   width: 350px;
+   padding: 5px;
+   font-size: 16px;
+   line-height: 1;
+   border: 0;
+   border-radius: 0;
+   height: 34px;
+   -webkit-appearance: none;
+}
+
 #header {
 	background-image: url("1.jpg");
 	background-size: cover;

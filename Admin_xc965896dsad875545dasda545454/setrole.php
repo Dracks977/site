@@ -17,7 +17,7 @@ catch(PDOException $e)
 	$result->execute();
 	while ($donnees = $result->fetch()){
 
-echo "<option>" . $donnees['Mail'] . "</option>";
+echo "<option id='Select'>" . $donnees['Mail'] . "</option>";
 
 }
 $result->closeCursor();
