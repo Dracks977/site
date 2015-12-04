@@ -26,9 +26,8 @@ catch(PDOException $e)
 	$donnees = $result2->fetch();
 	if($rows > 0) {
 		
-	 $dfg = $donnees['Quant'];
+	 echo $donnees['Quant'];
 	 $Quant = $dfg + 1;
-		echo $Quant;
 	$result3 = $conn->prepare("UPDATE Produit_User SET Quant= '$Quant' WHERE ID_produit = '$id_prod'");
 	$result3->execute();
 	}
