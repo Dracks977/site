@@ -15,7 +15,7 @@ catch(PDOException $e)
 $idu = $_GET['idu'];
 $idp = $_GET['idp'];
 
-    $result = $conn->prepare("DELETE PU.* FROM Produit_User PU WHERE PU.ID_produit = :idp AND PU.ID_utilisateur = :idu");
+    $result = $conn->prepare("DELETE PU.* FROM Produit_User PU WHERE PU.ID_produit = :idp AND PU.ID_utilisateur = :idu LIMIT 1");
 	$result->bindParam(':idp', $idp);
 	$result->bindParam(':idu', $idu);
 	$result->execute();

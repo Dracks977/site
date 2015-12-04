@@ -17,7 +17,7 @@ catch(PDOException $e)
 
 
 
-    $result = $conn->prepare("SELECT P.* FROM Produits P, Produit_User PU WHERE P.ID=PU.ID_produit AND PU.ID_utilisateur = :id_user LIMIT 1");
+    $result = $conn->prepare("SELECT P.* FROM Produits P, Produit_User PU WHERE P.ID=PU.ID_produit AND PU.ID_utilisateur = :id_user");
 	$result->bindParam(':id_user', $id_user);
 	$result->execute();
 	while ($donnees = $result->fetch()){
