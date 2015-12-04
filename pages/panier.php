@@ -38,24 +38,7 @@ include("headerD.php");
 	      <th>Prix HT (€)</th>
 		<th>Prix TTC (€)</th>
 	    </tr>
-	    <tr>
-	      <td><image src="../assets/b2.png" width="100"></image><br />Huile en Crème Corps L'Argan Bio - 175ml</td>
-	      <td><center>1</center><a id="po2">+</a><a id="po2">-</a></td>
-	      <td>15</td>
-	      <td>18</td>
-	    </tr>
-	    <tr>
-		<td><image src="../assets/pates.png" width="100"></image><br />pates épeautre Bio 250g</td>
-		<td><center>1</center><a id="po2">+</a><a id="po2">-</a></td>
-		<td>5</td>
-		<td>5.28</td>
-	    </tr>
-	    <tr>
-	      <td><image src="../assets/manteaux.png" width="100"></image><br />Komodo Manteau Pea Coat Grey</td>
-	      <td><center>1</center><a id="po2">+</a><a id="po2">-</a></td>
-	      <td>75</td>
-	      <td>90</td>
-	    </tr>
+	  <?php include("affpan.php"); ?>
 	    <tr id="fin">
 	      <th>total TTC :</th>
 	      <th> </th>
