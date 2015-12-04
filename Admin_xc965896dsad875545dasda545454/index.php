@@ -26,7 +26,6 @@
 <!-- div categorie-->
  <section id='moite'></section>
  <?php if (!isset($_GET['id']) OR $_GET['id'] == 1): ?>
-<div class="styled-select">
    <select>
  	<?php include("setrole.php"); ?>
  </select>
