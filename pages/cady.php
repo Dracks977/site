@@ -27,9 +27,10 @@ catch(PDOException $e)
 	if($rows > 0) {
 		$Quant = 55;
 		echo $id_prod;
-	$result3 = $conn->prepare("UPDATE Produit_User SET Quant= :Quant WHERE ID_produit = :ID_produit");
+	$result3 = $conn->prepare("UPDATE Produit_User SET Quant=:Quant WHERE ID_produit = :ID_produit");
 	$result3->bindParam(':Quant', $Quant);
 	$result3->bindParam(':ID_produit', $id_prod);
+	var_dump($result3);
 	$result3->execute();
 	}
 	else{
