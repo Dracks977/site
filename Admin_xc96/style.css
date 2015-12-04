@@ -14,14 +14,12 @@ body {
 }
 
 #wrap {
-	background-color : red;
 	width: 1800px;
 	height: 800px;
 	margin-top: 10px;
 }
 
 #moite {
-	background-color : green;
     padding:5px;
 	width: 870px;
 	float: left;
