@@ -18,7 +18,8 @@ echo "<section id='top'>
           	<article>
           		<h4 id='dprod'>" . $donnees['Libelle'] . "<br />" . $donnees['Description'] . 
           			"<ul>
-                		<li><a id='lir' href='../index.html'>ajouter au panier</a></li>
+                    <form id='font1' action='cady.php?id=" . $donnees['ID'] ."' method='POST'> 
+                		<li><a><input type='submit' value='ajouter au panier'></a></li>
                 		<li id='prix'>Prix : " . $donnees['Prix'] . "€</li>
               		</ul>
             	</h4>
