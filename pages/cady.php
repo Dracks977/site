@@ -23,15 +23,14 @@ catch(PDOException $e)
 	$result2->bindParam(':id_user', $id_user);
 	$result2->execute();
 	$donnees = $result2->fetch();
-	echo $donnees['Quant'] . "<br>";
+	$Quant = $donnees['Quant'];
 	$rows = $result2->fetch(PDO::FETCH_NUM);
 	
 	if($rows > 0) {
 		
-	 echo $donnees['Quant'];
-	 $Quant =  + 1;
+	 $jack = $Quant + 1;
 
-	$result3 = $conn->prepare("UPDATE Produit_User SET Quant= '$Quant' WHERE ID_produit = '$id_prod'");
+	$result3 = $conn->prepare("UPDATE Produit_User SET Quant= '$jack' WHERE ID_produit = '$id_prod'");
 	$result3->execute();
 	}
 	else{
