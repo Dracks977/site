@@ -14,7 +14,7 @@ catch(PDOException $e)
 
 $idu = $_GET['idu'];
 $idp = $_GET['idp'];
-$id = $_GET['id']
+$id = $_GET['id'];
 
     $result = $conn->prepare("DELETE PU.* FROM Produit_User PU WHERE PU.ID_produit = :idp AND PU.ID_utilisateur = :idu AND PU.ID= :id");
 	$result->bindParam(':idp', $idp);
