@@ -18,14 +18,18 @@ catch(PDOException $e)
 
 
 
-    $result2 = $conn->prepare("SELECT PU.* FROM Produit_User PU WHERE PU.ID_produit= :id_prod AND PU.ID_utilisateur = :id_user ");
+    $result5 = $conn->prepare("SELECT PU.* FROM Produit_User PU WHERE PU.ID_produit= :id_prod AND PU.ID_utilisateur = :id_user ");
+	$result5->bindParam(':id_prod', $id_prod);
+	$result5->bindParam(':id_user', $id_user);
+	$result5->execute();
+	$donnees = $result5->fetch();
+	$Quant = $donnees['Quant'];
+
+	$result2 = $conn->prepare("SELECT PU.* FROM Produit_User PU WHERE PU.ID_produit= :id_prod AND PU.ID_utilisateur = :id_user ");
 	$result2->bindParam(':id_prod', $id_prod);
 	$result2->bindParam(':id_user', $id_user);
 	$result2->execute();
-	$donnees = $result2->fetch();
-	$Quant = $donnees['Quant'];
 	$rows = $result2->fetch(PDO::FETCH_NUM);
-	
 	if($rows > 0) {
 		
 	 $jack = $Quant + 1;
