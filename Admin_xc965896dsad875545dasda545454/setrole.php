@@ -13,13 +13,14 @@ catch(PDOException $e)
     echo "Connection failed (check config.php):   " . $e->getMessage();
     }
 
-$reponse = $conn->query("SELECT * FROM User");
-while($donnees = $reponse->fetch()){
+    $result = $conn->prepare("SELECT * FROM User");
+	$result->execute();
+	while ($donnees = $result->fetch()){
 
-echo "<option>" . $donnees['Mail'] . "</option>"
+echo "<option>" . $donnees['Mail'] . "</option>";
 
 }
-$reponse->closeCursor();
+$result->closeCursor();
 
 
 
