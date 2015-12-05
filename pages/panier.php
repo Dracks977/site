@@ -40,7 +40,7 @@ include("headerD.php");
 	  <?php include("affpan.php"); ?>
 	  </table>
 	  <ul>
-	    <li><a id="fina" href="../index.php">Finaliser la commande</a></li>
+	    <li><a id="fina" href="../index.html">Finaliser la commande</a></li>
 	  </ul>
 	</center>
     </section>

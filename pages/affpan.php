@@ -24,11 +24,20 @@ catch(PDOException $e)
 		$Rprix = $donnees['Prix'] * $donnees['Quant'];
 		$prix = $Rprix + (($Rprix + 20) / 100);
 		echo "<tr>
-	      <td><image src='" . $donnees['image'] . "' width='100'></image><br />" . $donnees['Libelle'] . "</td>
+	      <td>	      <form style='float:left;' action='Sprop.php?idp=" . $donnees['ID'] ."&idu=" . $id_user  . "' method='POST'>
+	      <input id='po2' type='submit' value='X'>
+		  
+	      </form><image src='" . $donnees['image'] . "' width='100'></image><br />" . $donnees['Libelle'] . "</td>
 	      <td><center>" . $donnees['Quant'] . "</center>
-	      <form action='Sprop.php?idp=" . $donnees['ID'] ."&idu=" . $id_user  . "' method='POST'>
-	      <input id='po2' type='submit' value='X'></td>
-	      </form>
+		  <center>
+		  <form style='float:left;' action='plusprod.php?idp=" . $donnees['ID'] . "&idu=" . $id_user  . "&qu=" . $donnees['Quant'] . "' method='POST'>
+		  <input id='po2' type='submit' value='+'>
+		  </form>
+		  <form  action='moinsprod.php?idp=" . $donnees['ID'] . "&idu=" . $id_user  . "&qu=" . $donnees['Quant'] . "' method='POST'>
+		  <input id='po2' type='submit' value='-'>
+		  </form>
+		  </center>
+		  </td>
 	      <td>" . $Rprix . "</td>
 	      <td>" . $prix . "</td>
 	    </tr>";
