@@ -106,7 +106,17 @@ INSERT INTO Produits (Libelle,Description, image,Prix,Nombres_produit,Date_creat
 INSERT INTO Produits (Libelle,Description, image,Prix,Nombres_produit,Date_creation,Date_modification) VALUES ("Thé Vert Menthe Ceylan", "Ce thé vert 'mid grown' est récolté entre 500 et 1000 mètres d'altitude, dans la région montagneuse de Gampola. Dans les jardins des petits producteurs de SOFA se mêlent théiers, poivriers, canneliers et vanilliers.", "../assets/the3.png", '5', '30', NOW(), NOW());
 INSERT INTO Produits (Libelle,Description, image,Prix,Nombres_produit,Date_creation,Date_modification) VALUES ("Thé rouge bio Rooibos Nature", "Issue du plateau de Bokkevelberg en Afrique du Sud, ce thé rouge traditionnelle se distingue par une robe corail, des notes vanillées, une texture ronde et veloutée. Goûtez à la douceur de cette infusion de «buisson rouge» !", "../assets/roi.png", '5', '30', NOW(), NOW());
 
+INSERT INTO Produits (Libelle,Description, image,Prix,Nombres_produit,Date_creation,Date_modification) VALUES ("Gommage de douche Fruits Jaunes - 200ml", "Cette crème de douche bio à la texture onctueuse et au parfum gourmand nettoie votre peau au quotidien tout en éliminant en douceur les peaux mortes.", "../assets/b1.png", '9', '30', NOW(), NOW());
+INSERT INTO Produits (Libelle,Description, image,Prix,Nombres_produit,Date_creation,Date_modification) VALUES ("Couleur Caramel", "Ce rouge à lèvres vous offrira confort, brillance et tenue.", "../assets/b3.png", '15', '30', NOW(), NOW());
+INSERT INTO Produits (Libelle,Description, image,Prix,Nombres_produit,Date_creation,Date_modification) VALUES ("DR. HAUSCHKA eyeliner", "Le Crayon Kajal Dr.Hauschka embellit la forme naturelle de l’œil.", "../assets/b4.png", '12.9', '30', NOW(), NOW());
+INSERT INTO Produits (Libelle,Description, image,Prix,Nombres_produit,Date_creation,Date_modification) VALUES ("Grande brosse rectangulaire frêne naturel", "Hypoallergénique et antistatique, la grande brosse rectangulaire en frêne naturel et à picots courts de TEK masse votre cuir chevelu tout en stimulant la circulation sanguine.", "../assets/b5.png", '22', '30', NOW(), NOW());
+INSERT INTO Produits (Libelle,Description, image,Prix,Nombres_produit,Date_creation,Date_modification) VALUES ("Shampooing Cheveux Secs", "Recommandé pour les cheveux fragiles et cassants, le Shampooing Cheveux Secs COSLYS adoucit et nourrit le cheveu sec.", "../assets/b6.png", '13.5', '30', NOW(), NOW());
 
+INSERT INTO Produits (Libelle,Description, image,Prix,Nombres_produit,Date_creation,Date_modification) VALUES ("Komodo Poncho Arama Puncho Navy", "Poncho en laine.", "../assets/v1.png", '36', '30', NOW(), NOW());
+INSERT INTO Produits (Libelle,Description, image,Prix,Nombres_produit,Date_creation,Date_modification) VALUES ("Sweat Tam Acid Black", "Sweat col haut.", "../assets/v2.png", '45', '30', NOW(), NOW());
+INSERT INTO Produits (Libelle,Description, image,Prix,Nombres_produit,Date_creation,Date_modification) VALUES ("1083 Jean 201 Droit DenimOriginal Noir", "jeans droit de couleur noir pour femme. Denim 100% coton bio.", "../assets/v3.png", '58', '30', NOW(), NOW());
+INSERT INTO Produits (Libelle,Description, image,Prix,Nombres_produit,Date_creation,Date_modification) VALUES ("LeTricolore Pull Carbasse Rond Gris", "Pull Homme Carbasse col Rond Sobre et bien taillé, ce pull est marqué d’une discrète broderie Tricolore sur la poitrine", "../assets/v4.png", '41.6', '30', NOW(), NOW());
+INSERT INTO Produits (Libelle,Description, image,Prix,Nombres_produit,Date_creation,Date_modification) VALUES ("Komodo Robe Kesac Dress Wine", "Robe en Bamboo", "../assets/v6.png", '96.9', '30', NOW(), NOW());
 
 
 
@@ -120,9 +130,9 @@ INSERT INTO Categories (Libelle,Description, image,Date_creation,Date_modificati
 INSERT INTO Categories (Libelle,Description, image,Date_creation,Date_modification) VALUES ('Thés et Cafés', "Des thés et cafés de qualité superieur, cultivés dans la tradition de leur pays d'origine", "../assets/cacao.png",NOW(), NOW());
 INSERT INTO Categories (Libelle,Description, image,Date_creation,Date_modification) VALUES ('Produits de beauté', "Parce que la beauté n'implique pas forcément des molécules de synthèse et l'assassinat brutal d'animaux. 
              (oui ce site est aussi engagé) Découvrez donc cette gamme de produits naturels et bio venant du monde entier!", "../assets/creme.png",NOW(), NOW());
-INSERT INTO Categories (Libelle,Description, image,Date_creation,Date_modification) VALUES ('Vêtements', 'Vêtements des quatre coins du monde, traditionels ou en coton bio. ', "../assets/lanterne.png",NOW(), NOW());
-INSERT INTO Categories (Libelle,Description, image,Date_creation,Date_modification) VALUES ('Maison', 'Objets artisanaux pour le confort et la déco.', "../assets/encens.png",NOW(), NOW());
-INSERT INTO Categories (Libelle,Description, image,Date_creation,Date_modification) VALUES ('Bijoux', 'Bijoux faits main, pour sublimer votre beauté.', "../assets/bijoux.png",NOW(), NOW());
+INSERT INTO Categories (Libelle,Description, image,Date_creation,Date_modification) VALUES ('Vêtements', 'Vêtements des quatre coins du monde, traditionels ou en coton bio. ', "../assets/v6.png",NOW(), NOW());
+#INSERT INTO Categories (Libelle,Description, image,Date_creation,Date_modification) VALUES ('Maison', 'Objets artisanaux pour le confort et la déco.', "../assets/encens.png",NOW(), NOW());
+#INSERT INTO Categories (Libelle,Description, image,Date_creation,Date_modification) VALUES ('Bijoux', 'Bijoux faits main, pour sublimer votre beauté.', "../assets/bijoux.png",NOW(), NOW());
 
 INSERT INTO Commentaire_Produit (ID_produit,Nom,Prenom,Description) VALUES ('1', 'Jawad', 'paul', 'Super, merci !');
 INSERT INTO Commentaire_Produit (ID_produit,Nom,Prenom,Description) VALUES ('3', 'Copilard', 'Julien', "pas ouf :(");
@@ -132,9 +142,9 @@ INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('1', '1');
 INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('1', '2');
 INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('1', '3');
 #top
-INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('2', '5');
-INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('2', '4');
-INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('2', '6');
+INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('2', '15');
+INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('2', '10');
+INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('2', '22');
 #categ
 INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('3', '1');
 INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('3', '7');
@@ -149,5 +159,21 @@ INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('4', '13');
 INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('4', '14');
 INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('4', '15');
 INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('4', '16');
+
+INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('5', '17');
+INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('5', '2');
+INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('5', '18');
+INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('5', '19');
+INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('5', '20');
+INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('5', '21');
+
+INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('6', '3');
+INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('6', '22');
+INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('6', '23');
+INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('6', '24');
+INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('6', '25');
+INSERT INTO Categorie_Produit (ID_categorie, ID_produit) VALUES ('6', '26');
+
+
 
 

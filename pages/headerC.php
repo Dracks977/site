@@ -37,7 +37,7 @@ catch(PDOException $e)
     
     <a id="po" href="compte.php">gestion du compte</a>
   
-   <a id="po" href="dest.php">deconection</a>
+   <a id="po" href="dest.php">déconnexion</a>
         <?php 
         if ($_SESSION['User_role'] == 1){
         echo "<a id='po' href='../Admin_xc965896dsad875545dasda545454/'>Panel Admin</a>";
