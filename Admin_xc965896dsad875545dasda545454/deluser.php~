@@ -14,7 +14,7 @@ catch(PDOException $e)
 	
 	$mail = $_POST['user'];
 	
-	$result = $conn->prepare("DELETE U.* FROM User U WHERE U.mail = :user");
+	$result = $conn->prepare("DELETE U.* FROM user U WHERE U.mail = :user");
 	$result->bindParam(':user', $mail);
 	$result->execute();
 	header("location: index.php?id=66");
