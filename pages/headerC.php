@@ -35,7 +35,7 @@ catch(PDOException $e)
     <p id="log2">Bienvenue <?php echo $_SESSION['User_Nom'] . ' ' . $_SESSION['User_Prenom'] ?>, <a id="log3" href="pages/panier.php">vous avez <?php echo $produitT; ?> produits dans votre panier</a></p>
     <ul>
     
-    <a id="po" href="onbuild">gestion du compte</a>
+    <a id="po" href="compte.php">gestion du compte</a>
   
    <a id="po" href="dest.php">deconection</a>
         <?php 
